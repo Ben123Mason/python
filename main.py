@@ -13,7 +13,7 @@ C="Queenstown"
 D="Russel"
 answer= input(question_format.format(question, A, B, C, D )).lower()
 #check the user's answer and give feedback
-if answer== "wellington" or answer== "A".upper() :
+if answer== "wellington" or answer== "A".lower():
     print ("correct")
     score+=5
 elif answer== "":
@@ -22,4 +22,4 @@ else:
    print("WRONG") 
 print("The answer is Wellington")
 #end the quiz
-print("thank you for playing {}.your score is {}".format(name,score))
+print("thank you for playing {} your score is {}".format(name,score))
